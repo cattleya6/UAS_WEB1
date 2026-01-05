@@ -1,0 +1,402 @@
+/* CSS untuk styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e7e5e5;
+    transition: background 0.5s;
+    width: 100%;
+}
+header {
+    background-color: #5b56a0;
+    color: white;
+    padding: 5px;
+    text-align: left;
+    font-size: 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+}
+nav {
+    background-color: #736dca;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+nav ul li a:hover {
+    background-color: #5b56a0;
+    width: 100%;
+}
+.container {
+    max-width: 1300px;
+    margin: 30px auto;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+form {
+    margin-right: 20px;
+}
+input, button {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+button {
+    background-color: #5b56a0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #5b56a0;
+}
+footer {
+    background-color: #5b56a0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.hidden {
+    display: none;
+}
+#news-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+#contact {
+    margin-top: 20px;
+}
+/* Styling untuk Transaksi */
+#transaksi-menu {
+    margin-bottom: 20px;
+}
+.menu button {
+    margin: 5px;
+    padding: 10px 20px;
+    background: #5b56a0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.menu button:hover {
+    background: #5b56a0;
+}
+.form-section {
+    display: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.form-section.active {
+    display: block;
+}
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: block;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+input, button[type="submit"] {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+button[type="submit"] {
+    background: #5b56a0;
+    color: white;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background: #5b56a0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    border: 1px solid #b8b7b7;
+    padding: 5px;
+    text-align: center;
+}
+th {
+    background: rgb(255, 255, 255);
+}
+
+/* Styling untuk Beranda */
+#hero {
+    background-image: url('img/pict7.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.5);
+}
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+.hero-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+.hero-content h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+.hero-content p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.hero-content button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hero-content button:hover {
+    background-color: #0056b3;
+}
+#search-section {
+    margin: 20px 0;
+    text-align: center;
+}
+#search-input {
+    width: 70%;
+    display: inline-block;
+    margin-right: 10px;
+}
+#search-btn {
+    width: 25%;
+    display: inline-block;
+}
+#search-results {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+.search-result {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+#stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.stat-card {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.stat-card:hover {
+    transform: scale(1.05);
+}
+.stat-card h3 {
+    margin: 0;
+    font-size: 1em;
+}
+.stat-card p {
+    font-size: 1em;
+    margin: 5px 0 0;
+}
+#news-section, #collection-section, #services-section {
+    margin: 50px 0;
+}
+#news-cards, #book-cards, #services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.news-card, .book-card, .service-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
+}
+
+/* Media Query untuk Responsivitas */
+/* Mobile (<768px) */
+@media (max-width: 767px) {
+    header {
+        padding: 5px;
+        font-size: 1.2em;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+    nav ul li a {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+    #hero {
+        height: 250px;
+        margin-bottom: 15px;
+    }
+    .hero-content h2 {
+        font-size: 1.8em;
+    }
+    .hero-content p {
+        font-size: 1em;
+    }
+    .hero-content button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+    #search-input {
+        width: 60%;
+    }
+    #search-btn {
+        width: 35%;
+    }
+    #stats {
+        flex-direction: column;
+        align-items: center;
+    }
+    .stat-card {
+        width: 80%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+    .stat-card h3 {
+        font-size: 0.9em;
+    }
+    .stat-card p {
+        font-size: 1.2em;
+    }
+    #news-cards, #book-cards, #services {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .news-card img, .book-card img {
+        height: 150px;
+    }
+    table {
+        font-size: 0.8em;
+        overflow-x: auto;
+        display: block;
+        white-space: nowrap;
+    }
+    footer {
+        position: static;
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
+
+/* Tablet (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+        padding: 5px;
+        font-size: 1.4em;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    nav ul li a {
+        padding: 9px;
+        font-size: 0.95em;
+    }
+    .container {
+        margin: 15px auto;
+        padding: 18px;
+    }
+    #hero {
+        height: 350px;
+    }
+    .hero-content h2 {
+        font-size: 2.2em;
+    }
+    .hero-content p {
+        font-size: 1.1em;
+    }
+    #search-input {
+        width: 65%;
+    }
+    #search-btn {
+        width: 30%;
+    }
+    #stats {
+        justify-content: space-between;
+    }
+    .stat-card {
+        width: 28%;
+        padding: 12px;
+    }
+    #news-cards, #book-cards, #services {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+    .news-card img, .book-card img {
+        height: 180px;
+    }
+    table {
+        font-size: 0.9em;
+    }
+    footer {
+        padding: 12px;
+    }
+}
+
