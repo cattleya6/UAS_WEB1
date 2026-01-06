@@ -349,7 +349,7 @@ th {
     #book-cards,
     #services {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 20px;
+        gap: 40px;
     }
 
     /* Table */
@@ -367,4 +367,5 @@ th {
     }
 
 }
+
 
