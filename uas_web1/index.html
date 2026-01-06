@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BukaBuku</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BukaBuku
+            <img src="img/icon2 (1).png" width="40" height="40" alt="icon 1"/>
+        </h1>
+    </header>
+    <nav id="nav">
+        <ul>
+            <li><a href="#beranda" class="active">Beranda</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li id="login-nav"><a href="#login">Login</a></li>
+            <li id="transaksi-nav" class="hidden"><a href="#transaksi">Transaksi</a></li>
+            <li id="logout-nav" class="hidden"><a href="#logout" id="logout-link">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Halaman Login -->
+        <section id="login-section" class="hidden">
+            <form id="login-form">
+                <h2>Login Admin</h2>
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p id="login-message"></p>
+            </form> 
+        </section>
+
+        <!-- Halaman Beranda -->
+        <section id="beranda-section">
+            <div id="hero">
+                <div class="hero-content">
+                    <h2>Selamat Datang di BukaBuku</h2>
+                    <p>Temukan dunia pengetahuan dan literasi di sini. Jelajahi koleksi buku kami!</p>
+                </div>
+            </div>
+            <div id="services-section">
+                <div id="services">
+                    <div class="service-card">
+                        <br>
+                        <img src="img/anggota.png" width="80" height="80" alt="anggota"/>
+                        <h4>Keanggotaan</h4>
+                        <p>Daftar sebagai member untuk akses penuh.</p>
+                        <a href="#login">Daftar<br></a><br>
+                    </div>
+                    <div class="service-card">
+                        <br>
+                        <img src="img/perpus2.png" width="80" height="80" alt="perpus2"/>
+                        <h4>Informasi Perpustakaan</h4>
+                        <p>Pelajari lebih lanjut tentang kami.</p>
+                        <a href="#profil">Lihat Profil<br></a><br>
+                    </div>
+                </div>
+            </div>
+
+            <div id="news-section">
+                <h3>Info Terkini</h3>
+                <div id="news-cards">
+                    <div class="news-card">
+                        <br>
+                        <img src="img/berita 1.png" width="300" height="300" alt="Berita 1">
+                        <h4>Perpustakaan Tingkatkan Layanan<br> Demi Kenyamanan Pengunjung</h4>
+                    </div>
+                    <div class="news-card"> 
+                        <br>
+                        <img src="img/berita 2.png" width="300" height="300" alt="Berita 2">
+                        <h4>Minat Baca Pengunjung Meningkat<br>Koleksi Novel Jadi Favorit</h4>
+                    </div>
+                    <div class="news-card">
+                        <br>
+                        <img src="img/berita 3.png" width="300" height="300" alt="Berita 3">
+                        <h4>Sudut Baca Anak<br>Jadi Area Favorit Pengunjung Cilik</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="collection-section">
+                <h3>Buku Populer Minggu Ini</h3>
+                <div id="book-cards">
+                    <div class="news-card">
+                        <br><br>
+                        <img src="img/Laut bercerita.jpg" width="200" height="250" alt="Laut Bercerita">
+                        <h4>Laut Bercerita</h4>
+                        <p>Leila S. Chudori</p>
+                    </div>
+                    <div class="news-card">
+                        <br><br>
+                        <img src="img/halte.jpg" width="200" height="250" alt="halte alam">
+                        <h4>Halte Alam Baka</h4>
+                        <p>Kai Elian</p>
+                    </div>
+                    <div class="news-card">
+                        <br><br>
+                        <img src="img/money.jpg" width="200" height="250" alt="Psychologi">
+                        <h4>The Psychologi of Money</h4>
+                        <p>Morgan Housel</p>
+                    </div>
+                    <div class="news-card">
+                        <br><br>
+                        <img src="img/mariposa.jpg" width="200" height="250" alt="Mariposa">
+                        <h4>Mariposa</h4>
+                        <p>Luluk HF</p>
+                    </div>
+                    <div class="news-card">
+                        <br><br>
+                        <img src="img/Cantik Itu Luka.jpeg" width="200" height="250" alt="cantik">
+                        <h4>Cantik Itu Luka</h4>
+                        <p>Eka Kurniawan</p>
+                    </div>
+                    <div class="news-card">
+                        <br><br>
+                        <img src="img/mia ayam.jpg" width="200" height="250" alt="Mie ayam">
+                        <h4>Seporsi Mie Ayam Sebelum Mati</h4>
+                        <p>Brian Khrisna</p>
+                    </div>
+                    <div class="news-card">
+                        <br><br>
+                        <img src="img/mountain.jpg" width="200" height="250" alt="mountain">
+                        <h4>The Mountain Is You</h4>
+                        <p>Brianna Wiest</p>
+                    </div>
+                    <div class="news-card">
+                        <br><br>
+                        <img src="img/perahu.jpg" width="200" height="250" alt="perahu kertas">
+                        <h4>Perahu Kertas</h4>
+                        <p>Dee Lestari</p>
+                    </div>
+                    <div class="news-card">
+                        <br><br>
+                        <img src="img/harry.jpg" width="200" height="250" alt="harry potter">
+                        <h4>Harry Potter Series</h4>
+                        <p>J.K. Rowling</p>
+                    </div>
+                    <div class="news-card">
+                        <br><br>
+                        <img src="img/kopi.jpg" width="200" height="250" alt="Filosofi Kopi">
+                        <h4>Filosofi Kopi</h4>
+                        <p>Dee Lestari</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Kontrol Admin (Muncul setelah login) -->
+            <div id="admin-controls" class="hidden">
+                <div id="music-controls">
+                    <h3>Kontrol Musik</h3>
+                    <audio controls>
+                        <source src="audio/Nadin Amizah - Di Akhir Perang (Official Lyric Video) [ugk5pd9xgSw].mp3" type="audio/mpeg">
+                    </audio>
+            </div>
+    </div>
+        </section>
+
+        <!-- Halaman Profil -->
+        <section id="profil-section" class="hidden">
+            <div id="hero">
+                <div class="hero-content">
+                    <h2>BukaBuku</h2>
+                    <p>Temukan dunia pengetahuan dan literasi di sini. Jelajahi koleksi buku kami!</p>
+                </div>
+            </div>
+            <h2>Profil Perpustakaan</h2>
+            <p>Perpustakaan ini menyediakan berbagai koleksi buku, majalah, dan sumber daya digital. Kami berkomitmen untuk mendukung pendidikan dan literasi masyarakat.</p>
+            <p>Jam Operasional: Senin-Sabtu, 08:00-17:00</p><br>
+
+            <div id="contact">
+                <h3>Kontak Kami</h3>
+                <p>Email: info@BukaBuku.com</p>
+                <p>Telepon: 123-409-6020</p>
+                <p>Alamat: Jl. Kenangan No. 4, Kota Bandung</p>
+            </div>
+        </section>
+
+        <!-- Halaman Transaksi -->
+        <section id="transaksi-section" class="hidden">
+            <h2>Menu Transaksi</h2>
+            <div class="menu">
+            <button onclick="toggleForm('member')">Member</button>
+            <button onclick="toggleForm('peminjaman')">Peminjaman</button>
+            <button onclick="toggleForm('pengembalian')">Pengembalian</button>
+            </div>
+        
+        <!-- Form Member -->
+        <div id="member-form" class="form-section">
+            <h3>Form Member</h3>
+            <form onsubmit="addMember(event)">
+                <input type="text" id="member-id" placeholder="ID Member" required>
+                <input type="text" id="member-name" placeholder="Nama Member" required>
+                <input type="email" id="member-email" placeholder="Email" required>
+                <button type="submit">Tambah Member</button>
+            </form>
+        </div>
+        
+        <!-- Form Peminjaman -->
+        <div id="peminjaman-form" class="form-section">
+            <h3>Form Peminjaman</h3>
+            <form onsubmit="addPeminjaman(event)">
+                <input type="text" id="peminjaman-member-id" placeholder="ID Member" required>
+                <input type="text" id="peminjaman-judul" placeholder="Judul Buku" required>
+                <input type="date" id="peminjaman-tanggal" required>
+                <button type="submit">Pinjam</button>
+            </form>
+        </div>
+        
+        <!-- Form Pengembalian -->
+        <div id="pengembalian-form" class="form-section">
+            <h3>Form Pengembalian</h3>
+            <form onsubmit="addPengembalian(event)">
+                <input type="text" id="pengembalian-member-id" placeholder="ID Member" required>
+                <input type="text" id="pengembalian-judul" placeholder="Judul Buku" required>
+                <input type="date" id="pengembalian-tanggal" required>
+                <button type="submit">Kembali</button>
+            </form>
+        </div>
+        <br><br>
+        <!-- Data Transaksi -->
+        <h2>Data Transaksi</h2>
+        <h3>Member</h3>
+        <table id="member-table">
+            <thead>
+                <tr>
+                    <th>ID Member</th>
+                    <th>Nama Member</th>
+                    <th>Email Member</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        
+        <h3>Peminjaman</h3>
+        <table id="peminjaman-table">
+            <thead>
+                <tr>
+                    <th>ID Member</th>
+                    <th>Judul Buku</th>
+                    <th>Tanggal</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        
+        <h3>Pengembalian</h3>
+        <table id="pengembalian-table">
+            <thead>
+                <tr>
+                    <th>ID Member</th>
+                    <th>Judul Buku</th>
+                    <th>Tanggal</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+            
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 BukaBuku. All rights reserved.</p>
+    </footer>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
