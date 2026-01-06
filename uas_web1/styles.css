@@ -75,6 +75,7 @@ footer {
     text-align: center;
     padding: 10px;
     bottom: 0;
+    position: fixed;
     width: 100%;
     box-sizing: border-box;
 }
@@ -365,4 +366,5 @@ th {
         font-size: 0.9em;
         padding: 10px;
     }
+
 }
